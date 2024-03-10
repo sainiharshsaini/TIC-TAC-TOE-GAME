@@ -51,7 +51,7 @@ let msg = document.querySelector("#msg")
 let check = true // player X, player O
 let count = 0
 
-const winPatterns = [[0,1,2],
+const winPatterns = [[0, 1, 2],
 [0, 1, 2],
 [0, 3, 6],
 [0, 4, 8],
@@ -71,8 +71,7 @@ boxes.forEach( (eachbox) => {
             check = false
             eachbox.disabled = true
             count++
-        } 
-        else {
+        } else {
             // player X
             eachbox.innerHTML = "X"
             eachbox.style.color = "red"
