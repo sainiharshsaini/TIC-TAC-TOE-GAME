@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container1">
+        <h1>Tic Tac Toe Game</h1>
+        
+            <!-------------------------------- User's Name Display ----------------------------->
+
+            <div class="players-name">
+                <h2>Enter Your Name :</h2>
+                <div class="input-box">
+
+                    <label for="playerO">
+                        Player (O) Name : <input type="text" id="playerO">
+                    </label>
+
+                    <label for="playerX">
+                        Player (X) Name : <input type="text" id="playerX">
+                    </label>
+
+                    <label for="start-btn">
+                        <button type="submit" id="start-btn">Start Now</button>
+                    </label>
+
+                </div>
+                <h3>Created by HARSH SAINI (<i>BTech CSE 2nd Year</i>)</h3>
+            </div>
+
+            <!-- --------------------------------------- Game Display -------------------------------------- -->
+
+        <div class="container-tic-tac-toe">
+
+            <!------------------------------------ Tic Tac Toe Game Play -------------------------------------->
+            <div class="tic-box1">
+
+                <div class="winner hide">
+                    <h4 id="msg"></h4>
+                </div>
+
+                <div class="tic-tac-toe">
+                    <div class="box" id="0"></div>
+                    <div class="box" id="1"></div>
+                    <div class="box" id="2"></div>
+                    <div class="box" id="3"></div>
+                    <div class="box" id="4"></div>
+                    <div class="box" id="5"></div>
+                    <div class="box" id="6"></div>
+                    <div class="box" id="7"></div>
+                    <div class="box" id="8"></div>
+                </div>
+
+                <div class="button">
+                    <div class="game-btn">
+                        <button type="button" id="newgame">Reset</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- -------------------------------- Tic Tac Toe Scoreboard ---------------------------------- -->
+
+            <div class="tic-box2">
+                <div class="result-box">
+                    <table class="table">
+
+                        <caption class="caption">Tic Tac Toe Scoreboard</caption>
+
+                        <thead>
+                            <tr>
+                                <th style="width: 24%;" >#</th>
+                                <th style="width: 38%;" id="set-playerO"></th>
+                                <th style="width: 38%;" id="set-playerX"></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <!-- Table data -->
+                        </tbody>
+
+                        <tfoot>
+                            <tr>
+                                <td id="matchtotal">0</td>
+                                <td id="playerO-total">0</td>
+                                <td id="playerX-total">0</td>
+                            </tr>
+                        </tfoot>
+
+                    </table>
+                </div>
+
+                <!-- ------------------------ Enter New Player's Name ------------------------------- -->
+
+                <label for="new-players">
+                    <button type="reset" id="new-players">New Players</button>
+                </label>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.container1{
+    height: 100%;
+    width: 100%;
+}
+
+.container1>h1{
+    height: 7%;
+    width: 100%;
+    background-color: brown;
+    text-align: center;
+    padding-top: 8px;
+}
+
+/* ------------------------------------ Enter Player's Name ------------------------------- */
+
+.players-name{
+    height: 100%;
+    width: 100%;
+    background-color:darkcyan;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.players-name h2{
+    height: 100px;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 18px;
+    background-color: white;
+    color: royalblue;
+    border-radius: 10px;
+}
+
+.players-name #start-btn{
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+    background-color: green;
+    font-size: 20px;
+}
+
+.players-name .input-box{
+    height: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.players-name label{
+    height: 50px;
+    width: 75%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.players-name label:nth-child(1){
+    color: green;
+}
+
+.players-name label:nth-child(2){
+    color: red;
+}
+
+.players-name input{
+    height: 90%;
+    width: 60%;
+    border: none;
+    margin-left: 5px;
+    border-radius: 10px;
+    background-color: rgba(169, 169, 169, 0.599);
+    font-size: 25px;
+    text-align: center;
+    font-family: gilroy;
+    color: rgba(0, 0, 0, 0.792);
+}
+
+.players-name h3{
+    font-size: 20px;
+    color: black;
+    margin-top: 25px;
+}
+
+.players-name h3 i{
+    color: brown;
+}
+
+/* ----------------------------- Tic Tac Toe Game Play ---------------------------------- */
+
+.container-tic-tac-toe{
+    height: 93%;
+    width: 100%;
+    background-color: blueviolet;
+    display: none;
+}
+
+.tic-box1{
+    height: 100%;
+    width: 50%;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.winner{
+    height: 15%;
+    width: 50%;
+    background-color: blueviolet;
+    font-size: 50px;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 8px solid white;
+}
+
+.tic-tac-toe{
+    height: 52%;
+    width: 50%;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.box{
+    height: 30%;
+    width: 30%;
+    background-color: darkgray;
+    border: none;
+    margin: 5px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 50px;
+}
+
+.button{
+    height: 15%;
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.game-btn button{
+    height: 50px;
+    width: 150px;
+    font-size: 25px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    background-color: red;
+    font-family: 'gilroy';
+}
+
+.hide{
+    display: none;
+}
+
+/* --------------------------------- Tic Tac Toe Scoreboard -------------------------------- */
+
+.tic-box2{
+    height: 100%;
+    width: 50%;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.result-box{
+    height: 75%;
+    width: 70%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table{
+    height: 92%;
+    width: 100%;
+    text-align: center;
+}
+
+.caption{
+    height: 50px;
+    font-size: 25px;
+    padding: 10px;
+    background-color: brown;
+}
+
+.table thead{
+    height: 12%;
+    background-color: blueviolet;
+}
+
+.table tbody{
+    background-color: darkcyan;
+}
+
+.table tfoot{
+    height: 12%;
+    background-color: blueviolet;
+}
+
+.table thead, tbody, tfoot{
+    font-size: 25px;
+}
+
+.table td img{
+    height: 30px;
+    width: 32px;
+}
+
+.table tbody td:nth-child(1){
+    background-color: blueviolet;
+}
+
+.table tfoot td:nth-child(1){
+    background-color: brown;
+}
+
+/* ---------------------------------- Enter New Player's Name ---------------------------------------- */
+
+.tic-box2 label #new-players{
+    height: 60px;
+    width: 150px;
+    background-color: royalblue;
+    color: white;
+    font-size: 22px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'gilroy';
+}
+
+.tic-box2 label #new-players:hover{
+    background-color: red;
+}
