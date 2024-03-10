@@ -136,10 +136,14 @@ function showWinner(win){
     msg.innerHTML = `Winner is ${win}`
     winner.classList.remove("hide")
     disableBoxes()
+    if (win == "O") {
+        check = true
+    } else {
+        check = false
+    }
 }
 
 function resetGame(){
-    check = true
     count = 0
     enableBoxes()
     winner.classList.add("hide")
