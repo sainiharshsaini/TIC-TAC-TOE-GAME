@@ -52,7 +52,8 @@ html, body{
     border-radius: 10px;
     border: none;
     background-color: green;
-    font-size: 20px;
+    font-size: 25px;
+    font-family: gilroy;
 }
 
 .players-name .input-box{
